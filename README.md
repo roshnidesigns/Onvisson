@@ -16,4 +16,27 @@ Online video streaming &amp; social networking website
    - pipenv shell
    - python manage.py runserver
 
-Experience the dynamic website on link generated : http://127.0.0.1:8000/
+
+**Installation for ML Model**
+
+1. Dependencies used :
+   - pip install numpy
+   - pip install pandas
+   - pip install tensorflow
+   - pip install keras
+   - pip install opencv-python
+
+2. Emotion_recognition.py : This is the main program. The pseudo code here shows how the model has been implemented.
+
+  **Importing libraries:** 
+
+   - Importing sys, os
+   - Importing pandas as pd
+   - Importing numpy as np
+   - from keras.models Importing Sequential
+   - from keras.layers Importing Dense, Dropout, Activation, Flatten
+   - from keras.layers Importing Conv2D, MaxPooling2D, BatchNormalization,AveragePooling2D
+   - from keras.losses Importing categorical_crossentropy
+   - from keras.optimizers Importing Adam
+   - from keras.regularizers Importing l2
+   - from keras.utils Importing np_utils
