@@ -19,36 +19,49 @@
         -ms-user-select: none;
         user-select: none;
       }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
     </style>
-    <!-- Custom styles for this template -->
     <link href="{% static 'search/album.css' %}" rel="stylesheet">
   </head>
   <body>
+<header class="clearfix">
+    <div class="container">
+      <div class="header-left">
+        <h1>ONVISSON</h1>
+      </div>
+      <div class="header-right">
+        <label for="open">
+          <span class="hidden-desktop"></span>
+        </label>
+        <nav>
+          <a href="#"><h3>Invite Friends</h3></a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
 <main role="main">
+
 
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Search Onvisson</h1>
-      <p class="lead text-muted">Get the top results on any query!
-      </p>
+      <h5>Get the top results on any query!
+      </h5>
 
       <form method="POST">
       <div class="input-group mb-3">
         {% csrf_token %}
         <input type="text" name="search" class="form-control" aria-label="Username">
-        
       </div>
       <p>
-        <button type="submit" name="submit" value="search" class="btn btn-primary my-2">Go Onvisson
+        <button type="submit" name="submit" value="search" class="btn btn-primary ">Go Onvisson
         </button>
-        <button type="submit" name="submit" value="feelinglucky" class="btn btn-secondary my-2">Mood Search</button>
+        <button type="submit" name="submit" value="feelinglucky" class="btn btn-secondary">Mood Search</button>
       </p>
     </form>
 
